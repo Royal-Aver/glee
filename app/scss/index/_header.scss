@@ -1,0 +1,154 @@
+.header {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 0 50px;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		@extend %rubik-500;
+		color: #436372;
+		font-size: 15px;
+		line-height: 0.8;
+		border-bottom: 1px solid transparent;
+		transition: border-color 0.7s, padding-bottom 0.7s;
+		position: relative;
+
+		&:hover {
+			border-color: #436372;
+			padding-bottom: 5px;
+		}
+
+		&--active {
+			border-bottom: 1px solid #436372;
+			padding-bottom: 5px;
+		}
+	}
+}
+
+.header-logo {
+	margin-right: 100px;
+}
+
+.user-nav {
+	display: flex;
+	justify-content: space-between;
+
+	&__link-search {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #edf1f4;
+		margin-right: 20px;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 16px;
+			height: 18px;
+			background-image: url(../../images/header/search.svg);
+			background-repeat: no-repeat;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__btn {
+		width: 50px;
+		height: 50px;
+		background-color: #a3bbc8;
+		border-radius: 50%;
+
+		&-inner {
+			width: 30px;
+			min-height: 30px;
+			padding: 1px;
+			margin: 10px auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__circle {
+		width: 5px;
+		height: 5px;
+		background-color: #fff;
+		border-radius: 50%;
+		margin: 2px;
+	}
+}
+
+.buy {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $accent-color;
+	width: 180px;
+	max-width: 100%;
+	min-height: 30px;
+	padding: 10px 0 10px;
+	border-radius: 20px;
+	margin-right: 20px;
+
+	&__item {
+		text-align: center;
+		width: 90px;
+		min-height: 30px;
+		position: relative;
+
+		&--left-line {
+			border-left: 1px solid #fde7d3;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 10px;
+			left: 0;
+			background-repeat: no-repeat;
+		}
+
+		&--hearth::before {
+			background-image: url(../../images/header/hearth.svg);
+		}
+
+		&--basket::before {
+			background-image: url(../../images/header/basket.svg);
+		}
+	}
+
+	&__num {
+		position: absolute;
+		top: 0;
+		left: 54px;
+		background-color: #fff;
+		padding: 5px 5px;
+		border-radius: 50%;
+		font-size: 10px;
+		line-height: 0.7;
+	}
+}

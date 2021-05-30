@@ -2,8 +2,8 @@
 	font-family: "dmsans-regular";
 	font-weight: 400;
 	font-style: normal;
-	src: local("dmsans-regular"), url(../fonts/DMSans-Regular.woff2) format ("woff2");
-	src: local("dmsans-regular"), url(../fonts/DMSans-Regular.woff) format ("woff");
+	src: local("dmsans-regular"), url(../fonts/DMSans-Regular.woff2) format ("woff2"),
+		url(../fonts/DMSans-Regular.woff) format ("woff");
 	font-display: swap;
 }
 
@@ -11,8 +11,8 @@
 	font-family: "dmsans-medium";
 	font-weight: 500;
 	font-style: normal;
-	src: local("dmsans-medium"), url(../fonts/DMSans-Medium.woff2) format ("woff2");
-	src: local("dmsans-medium"), url(../fonts/DMSans-Medium.woff) format ("woff");
+	src: local("dmsans-medium"), url(../fonts/DMSans-Medium.woff2) format ("woff2"),
+		url(../fonts/DMSans-Medium.woff) format ("woff");
 	font-display: swap;
 }
 
@@ -20,8 +20,8 @@
 	font-family: "dmsans-bold";
 	font-weight: 700;
 	font-style: normal;
-	src: local("dmsans-bold"), url(../fonts/DMSans-Bold.woff2) format ("woff2");
-	src: local("dmsans-bold"), url(../fonts/DMSans-Bold.woff) format ("woff");
+	src: local("dmsans-bold"), url(../fonts/DMSans-Bold.woff2) format ("woff2"),
+		url(../fonts/DMSans-Bold.woff) format ("woff");
 	font-display: swap;
 }
 
@@ -29,8 +29,8 @@
 	font-family: "rubik-regular";
 	font-weight: 400;
 	font-style: normal;
-	src: local("rubik-regular"), url(../fonts/Rubik-Regular.woff2) format ("woff2");
-	src: local("rubik-regular"), url(../fonts/Rubik-Regular.woff) format ("woff");
+	src: local("rubik-regular"), url(../fonts/Rubik-Regular.woff2) format ("woff2"),
+		url(../fonts/Rubik-Regular.woff) format ("woff");
 	font-display: swap;
 }
 
@@ -38,7 +38,7 @@
 	font-family: "rubik-medium";
 	font-weight: 500;
 	font-style: normal;
-	src: local("rubik-medium"), url(../fonts/Rubik-Medium.woff2) format ("woff2");
-	src: local("rubik-medium"), url(../fonts/Rubik-Medium.woff) format ("woff");
+	src: local("rubik-medium"), url(../fonts/Rubik-Medium.woff2) format ("woff2"),
+		url(../fonts/Rubik-Medium.woff) format ("woff");
 	font-display: swap;
 }

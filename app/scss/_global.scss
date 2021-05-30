@@ -1,14 +1,29 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
 	@extend %rubik-400;
 	font-size: 16px;
 	line-height: 1.9;
 	color: $default-color;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+.container--small {
+	max-width: 1200px;
+}
+
+main {
+	flex-grow: 1;
 }
 
 .logo {
@@ -20,16 +35,16 @@ focus-text {
 	outline: transparent;
 }
 
-.focus-object::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	border: 2px solid transparent;
-	transition: border-color 0.3s;
-}
+// .focus-object::before {
+// 	content: "";
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	height: 100%;
+// 	border: 2px solid transparent;
+// 	transition: border-color 0.3s;
+// }
 
 .focus-object:focus::before {
 	border-color: $accent-color;

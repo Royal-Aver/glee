@@ -1,0 +1,38 @@
+.footer {
+	color: #7b7b7b;
+	font-size: 14px;
+	line-height: 2.3;
+	padding: 70px 0 35px;
+}
+
+.footer-top {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		&--contacts {
+			max-width: 210px;
+		}
+
+		&--services {
+			max-width: 140px;
+		}
+
+		&--account {
+			max-width: 100px;
+		}
+
+		&--newsletter {
+			min-width: 280px;
+		}
+	}
+
+	&__title {
+		@extend %dmsans-700;
+		line-height: 1.3;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+}

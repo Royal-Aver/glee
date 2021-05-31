@@ -1,0 +1,41 @@
+.products-week {
+	text-align: center;
+	padding: 70px 0 185px;
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.products-filter {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 65px;
+
+	&__item {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__btn {
+		@extend %dmsans-700;
+		line-height: 1.2;
+		color: #7b7b7b;
+		background-color: transparent;
+		border: none;
+	}
+}
+
+@import "index/product-card";
+
+.product-card--margin {
+	margin: 0 15px 40px;
+}

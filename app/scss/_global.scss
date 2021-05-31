@@ -30,8 +30,13 @@ main {
 	position: relative;
 }
 
-focus-object,
-focus-text {
+.title {
+	@extend %dmsans-700;
+	font-size: 36px;
+}
+
+.focus-object,
+.focus-text {
 	outline: transparent;
 }
 

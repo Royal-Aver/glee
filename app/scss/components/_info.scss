@@ -1,0 +1,54 @@
+.info {
+	&__list {
+		background-color: #fef7f0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 33%;
+		padding: 40px 0;
+		border-right: 1px solid #e8e4df;
+		position: relative;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 55px;
+			height: 55px;
+			top: 60px;
+			left: 145px;
+			background-repeat: no-repeat;
+		}
+
+		&--support::before {
+			background-image: url(../../images/info/support.png);
+		}
+
+		&--delivery::before {
+			background-image: url(../../images/info/delivery.png);
+		}
+
+		&--wallet::before {
+			background-image: url(../../images/info/wallet.png);
+		}
+	}
+
+	&__box {
+		max-width: 345px;
+		margin-left: auto;
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 2.2;
+	}
+
+	&__text {
+		max-width: 215px;
+	}
+}

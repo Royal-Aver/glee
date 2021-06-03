@@ -4,10 +4,12 @@
 @import "reset";
 @import "global";
 
-@import "index/header";
-@import "index/footer";
-@import "components/slider";
-@import "components/info";
-@import "components/products";
+@import "components/header";
+@import "components/footer";
+@import "index/slider";
+@import "index/advantages";
+@import "index/products";
 
-@import "media";
+@import "components/button-nav";
+@import "components/product-card";
+@import "components/button";

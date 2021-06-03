@@ -1,6 +1,6 @@
 .products-week {
 	text-align: center;
-	padding: 70px 0 185px;
+	padding: 60px 0 185px;
 
 	&__title {
 		margin-bottom: 10px;
@@ -9,16 +9,21 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	&__item {
+		margin: 0 15px 40px;
 	}
 }
 
-.products-filter {
+.mix-filter {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 65px;
 
 	&__item {
-		margin-right: 30px;
+		margin-right: 20px;
 
 		&:last-child {
 			margin-right: 0;
@@ -26,16 +31,17 @@
 	}
 
 	&__btn {
-		@extend %dmsans-700;
+		font-family: "DMSans";
+		font-weight: 700;
 		line-height: 1.2;
 		color: #7b7b7b;
 		background-color: transparent;
 		border: none;
+		border-bottom: 1px solid transparent;
+		transition: border-color 0.7s, padding-bottom 0.7s, color 0.7s;
+
+		&:hover {
+			color: #1a1a1a;
+		}
 	}
-}
-
-@import "index/product-card";
-
-.product-card--margin {
-	margin: 0 15px 40px;
 }

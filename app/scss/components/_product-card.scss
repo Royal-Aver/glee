@@ -1,13 +1,22 @@
 .product-card {
-	width: 250px;
+	width: 270px;
 	max-width: 100%;
 	box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 	border-radius: 10px;
 	padding-bottom: 35px;
+	transition: box-shadow 0.7s;
+
+	&:hover .product-card__nav {
+		opacity: 1;
+	}
+
+	&:hover {
+		box-shadow: 0px 5px 30px 3px rgba(37, 37, 37, 0.09);
+	}
 
 	&__box {
 		height: 240px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 
 	&__img {
@@ -15,12 +24,17 @@
 		bottom: 0;
 		position: relative;
 		top: 40px;
+		max-width: 208px;
+		max-height: 236px;
+		object-fit: cover;
 	}
 
 	&__nav {
+		opacity: 0;
 		display: flex;
 		justify-content: center;
 		position: relative;
+		transition: opacity 0.7s;
 	}
 
 	&__item {
@@ -33,9 +47,11 @@
 
 	&__link {
 		position: relative;
-		padding: 12px 21px;
+		padding: 20px 20px;
+		border: none;
 		background-color: #fff;
 		border-radius: 50%;
+		box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
 		&::before {
 			content: "";
@@ -44,30 +60,21 @@
 			height: 20px;
 			top: 25%;
 			left: 25%;
-			background-repeat: no-repeat;
-		}
-
-		&--search::before {
-			background-image: url(../../images/product-card/icons/search.svg);
-		}
-
-		&--basket::before {
-			background-image: url(../../images/product-card/icons/basket.svg);
-		}
-
-		&--hearth::before {
-			background-image: url(../../images/product-card/icons/hearth.svg);
 		}
 	}
 
 	&__name {
-		@extend %dmsans-500;
+		font-family: "DMSans";
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 2.5;
 		color: $default-color;
 		display: block;
 	}
 
 	&__num {
-		@extend %dmsans-700;
+		font-family: "DMSans";
+		font-weight: 700;
 		color: #a3bbc8;
 	}
 }

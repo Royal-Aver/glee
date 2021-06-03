@@ -4,7 +4,8 @@ body {
 }
 
 body {
-	@extend %rubik-400;
+	font-family: "Rubik";
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.9;
 	color: $default-color;
@@ -16,68 +17,26 @@ body {
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 15px;
-}
 
-.container--small {
-	max-width: 1200px;
-}
-
-.container--big {
-	max-width: 1230px;
+	&--small {
+		max-width: 1200px;
+	}
 }
 
 main {
 	flex-grow: 1;
 }
 
-.logo {
-	position: relative;
+.logo__img {
+	width: 146px;
+	height: 39px;
+	object-fit: cover;
 }
 
 .title {
-	@extend %dmsans-700;
+	font-family: "DMSans";
+	font-weight: 700;
 	font-size: 36px;
-}
-
-.focus-object,
-.focus-text {
-	outline: transparent;
-}
-
-// .focus-object::before {
-// 	content: "";
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	right: 0;
-// 	height: 100%;
-// 	border: 2px solid transparent;
-// 	transition: border-color 0.3s;
-// }
-
-.focus-object:focus::before {
-	border-color: $accent-color;
-}
-
-.focus-text::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 0;
-	left: 0;
-	top: 0;
-	background-color: $accent-color;
-	z-index: -1;
-	border-radius: 5px;
-	transition: height 0.3s, transform 0.3s;
-}
-
-.focus-text:focus:before {
-	height: 100%;
-}
-
-.focus-text:active:before {
-	transform: rotate(30deg);
 }
 
 .sr-only {

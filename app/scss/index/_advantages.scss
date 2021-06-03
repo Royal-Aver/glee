@@ -1,4 +1,4 @@
-.info {
+.advantages {
 	&__list {
 		background-color: #fef7f0;
 		display: flex;
@@ -7,21 +7,26 @@
 
 	&__item {
 		width: 33%;
-		padding: 40px 0;
+		padding: 35px 0;
 		border-right: 1px solid #e8e4df;
-		position: relative;
 
 		&:last-child {
 			border-right: none;
 		}
+	}
+
+	&__box {
+		max-width: 215px;
+		margin-left: 220px;
+		position: relative;
 
 		&::before {
 			content: "";
 			position: absolute;
 			width: 55px;
 			height: 55px;
-			top: 60px;
-			left: 145px;
+			top: 15px;
+			left: -80px;
 			background-repeat: no-repeat;
 		}
 
@@ -38,17 +43,8 @@
 		}
 	}
 
-	&__box {
-		max-width: 345px;
-		margin-left: auto;
-	}
-
 	&__title {
 		font-size: 18px;
 		line-height: 2.2;
-	}
-
-	&__text {
-		max-width: 215px;
 	}
 }

@@ -1,0 +1,12 @@
+.btn {
+	color: #ffffff;
+	font-family: "DMSans";
+	font-weight: 400;
+	border: none;
+	background-color: $link-color;
+	transition: background-color 0.7s;
+
+	&:hover {
+		background-color: #2f8abb;
+	}
+}

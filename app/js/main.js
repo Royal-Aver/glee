@@ -1,9 +1,9 @@
 $(function () {
-	$('.slider__inner').slick({
+	$('.slider-top__inner').slick({
 		arrows: false,
 		dots: true,
-		autoplay: true,
-		autoplaySpeed: 3000,
+		// autoplay: true,
+		// autoplaySpeed: 3000,
 	})
 
 });

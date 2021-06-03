@@ -1,27 +1,7 @@
 $default-color: #243f4d;
 $accent-color: #fcd7b6;
+$link-color: #a3bbc8;
 
-%dmsans-400 {
-	font-family: "dmsans-regular", sans-serif;
-	font-weight: 400;
-}
-
-%dmsans-500 {
-	font-family: "dmsans-medium", sans-serif;
-	font-weight: 500;
-}
-
-%dmsans-700 {
-	font-family: "dmsans-bold", sans-serif;
-	font-weight: 700;
-}
-
-%rubik-400 {
-	font-family: "rubik-regular", sans-serif;
-	font-weight: 400;
-}
-
-%rubik-500 {
-	font-family: "rubik-medium", sans-serif;
-	font-weight: 500;
-}
+// @mixin line-clamp($lines-to-show) {
+// 	lines-to-show: $lines-to-show;
+// }

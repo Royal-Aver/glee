@@ -1,32 +1,34 @@
-.slider {
-	&__inner {
-	}
-
+.slider-top {
 	&__item {
-		padding: 215px 0 275px;
-		background-image: url(../../images/slider/slider-bg.jpg);
 		position: relative;
-	}
-
-	&__content {
-		max-width: 430px;
 
 		&::before {
 			content: "";
 			position: absolute;
-			height: 100%;
-			width: 100%;
-			top: 35%;
-			right: 55%;
+			width: 640px;
+			height: 254px;
+			top: 36%;
+			right: 17%;
 			background-image: url(../../images/slider/furniture.png);
 			background-repeat: no-repeat;
+			background-position: center center;
 		}
 	}
 
+	&__content {
+		height: calc(100vh - 145px);
+		max-width: 430px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&__title {
-		@extend %rubik-500;
+		font-family: "Rubik";
+		font-weight: 500;
 		font-size: 72px;
 		line-height: 1;
+		text-transform: uppercase;
 		margin-bottom: 20px;
 	}
 
@@ -35,17 +37,22 @@
 		line-height: 1.7;
 		color: #436372;
 		margin-bottom: 30px;
+		max-width: 385px;
+
+		& p {
+			margin: 0;
+			-webkit-line-clamp: 3;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+		}
 	}
 
-	@import "index/button";
+	@import "components/button";
 
 	&__btn {
-		width: 200px;
-		max-width: 100%;
-		text-align: left;
-		padding-left: 25px;
-		min-height: 60px;
+		padding: 18px 100px 18px 25px;
 		position: relative;
+		max-width: 200px;
 
 		&::before {
 			content: "";
@@ -64,7 +71,8 @@
 	position: absolute;
 	display: flex;
 	bottom: 45px;
-	right: 50%;
+	left: 50%;
+	transform: translateX(-50%);
 
 	& li {
 		margin-right: 10px;

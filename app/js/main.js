@@ -9,3 +9,4 @@ $(function () {
 });
 
 var mixer = mixitup('.products-week');
+var mixer = mixitup('.new-design');

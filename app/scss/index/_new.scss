@@ -1,23 +1,10 @@
-.products-week {
-	text-align: center;
-	padding: 60px 0 80px;
-
+.new-design {
 	&__title {
-		margin-bottom: 10px;
-	}
-
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -15px 150px;
-	}
-
-	&__item {
-		margin: 0 15px 40px;
+		text-align: center;
 	}
 }
 
-.mix-filter {
+.filter-new {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 65px;
@@ -46,6 +33,16 @@
 	}
 }
 
-.mixitup-control-active .mix-filter__btn {
+.new {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+	&__item {
+		margin: 0 15px 20px;
+	}
+}
+
+.mixitup-control-active .filter-new__btn {
 	color: #1a1a1a;
 }

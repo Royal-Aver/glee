@@ -9,6 +9,7 @@
   "author": "Yuriy Averichev",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "gulp": "^4.0.2",
     "gulp-svg-sprite": "^1.5.0",
     "slick-carousel": "^1.8.1"

@@ -1,0 +1,34 @@
+.insights {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	&__view-all {
+		font-family: "DMSans";
+		font-weight: 700;
+		padding-right: 25px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 13px;
+			height: 13px;
+			top: 25%;
+			right: 0;
+			background-image: url(../../images/insights/arrow-right.png);
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__item {
+		margin: 15px;
+	}
+}

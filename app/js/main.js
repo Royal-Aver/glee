@@ -8,5 +8,14 @@ $(function () {
 
 });
 
+$(function () {
+	$('.slider-partners__inner').slick({
+		arrows: false,
+		slidesToShow: 5,
+		slidesToScroll: 5,
+	})
+
+});
+
 var mixer = mixitup('.products-week');
 var mixer = mixitup('.new-design');

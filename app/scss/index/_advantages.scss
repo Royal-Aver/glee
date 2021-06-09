@@ -16,8 +16,8 @@
 	}
 
 	&__box {
-		max-width: 215px;
-		margin-left: 220px;
+		width: 360px;
+		margin-left: auto;
 		position: relative;
 
 		&::before {
@@ -44,7 +44,12 @@
 	}
 
 	&__title {
+		justify-content: start;
 		font-size: 18px;
 		line-height: 2.2;
+	}
+
+	&__text {
+		max-width: 220px;
 	}
 }

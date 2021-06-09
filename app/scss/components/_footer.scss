@@ -15,6 +15,10 @@
 		width: 300px;
 	}
 
+	&__logo {
+		margin-bottom: -10px;
+	}
+
 	&__list {
 		&--contacts {
 			margin-top: 20px;
@@ -29,17 +33,17 @@
 
 	&__services {
 		width: 300px;
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 
 	&__account {
 		width: 300px;
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 
 	&__newsletter {
 		width: 270px;
-		padding: 10px 0 30px 0;
+		padding: 15px 0 30px 0;
 	}
 
 	&__link {
@@ -79,7 +83,7 @@
 			background-color: #fef7f0;
 			width: 170px;
 			max-width: 100%;
-			padding: 0 15px;
+			padding: 2px 15px;
 
 			&::placeholder {
 				color: #234969;

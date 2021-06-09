@@ -6,7 +6,7 @@
 
 @import "components/header";
 @import "components/footer";
-@import "index/slider";
+@import "index/slider-top";
 @import "index/advantages";
 @import "index/products";
 @import "index/favorites";
@@ -15,8 +15,9 @@
 @import "index/insights";
 @import "index/slider-partners";
 
-@import "components/button-nav";
+@import "components/button-circle";
 @import "components/product-card";
+@import "components/mix-filter";
 @import "components/button";
 @import "components/new-card";
 @import "components/insights-card";

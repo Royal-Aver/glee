@@ -30,13 +30,14 @@ main {
 .logo__img {
 	width: 146px;
 	height: 39px;
-	object-fit: cover;
 }
 
 .title {
 	font-family: "DMSans";
 	font-weight: 700;
 	font-size: 36px;
+	display: flex;
+	justify-content: center;
 }
 
 .sr-only {

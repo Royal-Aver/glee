@@ -1,8 +1,10 @@
 .video {
 	display: block;
 	height: 500px;
+	max-width: 1920px;
+	object-fit: contain;
 	position: relative;
-	margin-bottom: 115px;
+	margin-bottom: 100px;
 
 	&::before {
 		content: "";
@@ -10,6 +12,7 @@
 		width: 127px;
 		height: 127px;
 		background-image: url(../images/video/button-video.png);
+		background-repeat: no-repeat;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);

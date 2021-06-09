@@ -1,37 +1,8 @@
 .new-design {
-	margin-bottom: 125px;
+	margin-bottom: 100px;
 
 	&__title {
 		text-align: center;
-	}
-}
-
-.filter-new {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 65px;
-
-	&__item {
-		margin-right: 20px;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
-	&__btn {
-		font-family: "DMSans";
-		font-weight: 700;
-		line-height: 1.2;
-		color: #7b7b7b;
-		background-color: transparent;
-		border: none;
-		border-bottom: 1px solid transparent;
-		transition: border-color 0.7s, padding-bottom 0.7s, color 0.7s;
-
-		&:hover {
-			color: #1a1a1a;
-		}
 	}
 }
 
@@ -43,8 +14,4 @@
 	&__item {
 		margin: 0 15px 20px;
 	}
-}
-
-.mixitup-control-active .filter-new__btn {
-	color: #1a1a1a;
 }

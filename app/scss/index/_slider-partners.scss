@@ -1,14 +1,21 @@
+// Этот блок просто неуправляемый, промучался часов 5
+
 .slider-partners {
 	background-color: #fef7f0;
-	padding: 255px 0 85px;
-	margin-top: -205px;
+	padding: 275px 0 90px 0;
+	margin-top: -200px;
 
 	&__inner {
+		max-width: 1050px;
+		margin: 0 auto;
+		display: flex;
 	}
 
 	&__item {
-		margin: 0 65px;
 		height: 84px;
+		display: flex !important;
+		align-items: center;
+		margin-right: 50px;
 	}
 
 	&__link {

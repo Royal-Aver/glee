@@ -1,13 +1,18 @@
 .new-card {
 	width: 370px;
 	max-width: 100%;
-	padding: 45px 0 130px 35px;
+	padding: 40px 0 120px 35px;
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-color: #f8f8f8;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	position: relative;
+	overflow: hidden;
+
+	&:hover .new-card__text {
+		color: #2f8abb;
+	}
 
 	&__title {
 		max-width: 200px;
@@ -21,11 +26,18 @@
 		font-family: "DMSans";
 		font-weight: 700;
 		color: $link-color;
+		transition: color 0.7s;
+	}
+
+	&__img-inner {
+		width: 330px;
+		position: absolute;
+		left: 100px;
+		bottom: 40px;
+		display: flex;
 	}
 
 	&__img {
-		position: absolute;
-		top: 0;
-		right: 0;
+		margin: 0 auto;
 	}
 }
